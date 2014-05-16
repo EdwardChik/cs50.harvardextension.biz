@@ -1,7 +1,7 @@
 <?php
  
     // configuration
-    require("../includes/config.php"); 
+    require("includes/config.php"); 
  
     // if user is already logged in    
     if (session_status() === PHP_SESSION_ACTIVE)
@@ -12,11 +12,11 @@
         $quizzes = query("SELECT name FROM quizzes");
  
         // render available quizzes
-        render("../views/v_quizzes.php", ["quizzes" => $quizzes, "title" => "LearnIt - Available Quizzes"]);
+        render("views/v_quizzes.php", ["quizzes" => $quizzes, "title" => "LearnIt - Available Quizzes"]);
     }
     else
     {
         // render login form
-        render("v_login.php", ["title" => "LearnIt - Log In"]);
+        render("../views/v_login.php", ["title" => "LearnIt - Log In"]);
     }
 ?>
