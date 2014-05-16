@@ -43,7 +43,7 @@
     else
     {
         // otherwise, display registration form
-        render("v_registeration.php", ["title" => "Register"]);
+        render("v_registration.php", ["title" => "LearnIt - Register"]);
     }
  
 ?>
