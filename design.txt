@@ -1,0 +1,8 @@
+*** CSCI E-50: LearnIt
+
+The design of LearnIt was based on what we learned about PHP in class, and then trying to take it further by orienting it towards a more user input driven experience.
+
+The project is written in PHP so it won't require compilation, and there's an included .sql export which can also be loaded into a local installation of phpMyAdmin or a compatible equivalent to access the data set. I loaded in some of the questions from the past couple of quizzes, the conversion from PDF to text was so difficult (i.e. inconsistent cryptic characters and spacing) that I couldn't add more than a sample.
+
+I created a database schema based on what is known as a 3NF process, which I came across online from a database design tutorial. I focused on creating as little redundancy as possible, while still providing each table with a unique ID that could be used as a primary key.
+
